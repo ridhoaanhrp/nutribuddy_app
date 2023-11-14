@@ -194,7 +194,7 @@ class _HistoryFoodState extends State<HistoryFood> {
                     DateTime.now(),
                     width: width * 0.14,
                     height: height * 0.08,
-                    locale: "Indonesia",
+                    locale: "en_Us",
                     controller: controllerDate,
                     initialSelectedDate: DateTime.now(),
                     daysCount: DateTime.monthsPerYear,

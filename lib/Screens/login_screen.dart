@@ -16,7 +16,7 @@ class _loginScreenState extends State<loginScreen> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  String usernameDefault = "fixgoal";
+  String usernameDefault = "noel123";
   String passwordDefault = "1234";
 
   @override

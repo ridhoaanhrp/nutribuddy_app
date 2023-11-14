@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconify_flutter/iconify_flutter.dart';
 import 'package:iconify_flutter/icons/ant_design.dart';
-import 'package:iconify_flutter/icons/fluent.dart';
+// import 'package:iconify_flutter/icons/fluent.dart';
 
 class SearchBarField extends StatelessWidget {
   const SearchBarField({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class SearchBarField extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Iconify(AntDesign.search_outlined),
-                    Iconify(Fluent.filter_28_regular)
+                    // Iconify(Fluent.filter_28_regular)
                   ]),
               enabledBorder: InputBorder.none,
               focusedBorder: InputBorder.none),

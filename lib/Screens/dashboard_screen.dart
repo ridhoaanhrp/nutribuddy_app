@@ -61,115 +61,101 @@ class _DashboardScreenState extends State<DashboardScreen> {
               width: width,
               child: ListView(
                 children: [
-                  Column(
+                  const DropDownButton(),
+                  SizedBox(
+                    height: height * 0.03,
+                  ),
+                  const CalenderSlider(),
+                  SizedBox(
+                    height: height * 0.04,
+                  ),
+                  Stack(
+                    clipBehavior: Clip.none,
+                    fit: StackFit.loose,
                     children: [
-                      const DropDownButton(),
-                      SizedBox(
-                        height: height * 0.03,
-                      ),
-                      const CalenderSlider(),
-                      SizedBox(
-                        height: height * 0.05,
-                      ),
-                      Stack(
-                        clipBehavior: Clip.hardEdge,
-                        children: [
-                          Container(
-                            width: width,
-                            height: height * 1.8,
-                            decoration: const BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.only(
-                                    topLeft: Radius.circular(30),
-                                    topRight: Radius.circular(30))),
-                            child: Column(
-                              children: [
-                                Padding(
-                                  padding: EdgeInsets.only(
-                                      top: height * 0.09,
-                                      left: width * 0.06,
-                                      right: width * 0.06),
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Aktivitas Hari Ini",
-                                        style: TextStyle(
-                                            fontFamily: "Montserrat",
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
-                                      )
-                                    ],
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: height * 0.03,
-                                ),
-                                Stack(
-                                  clipBehavior: Clip.hardEdge,
-                                  children: const [
-                                    Activity(),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: height * 0.03,
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.only(
-                                      top: height * 0.01,
-                                      left: width * 0.06,
-                                      right: width * 0.06),
-                                  child: Row(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: const [
-                                      Text(
-                                        "Rekomendasi Makanan",
-                                        style: TextStyle(
-                                            fontFamily: "Montserrat",
-                                            fontSize: 13,
-                                            fontWeight: FontWeight.bold),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                                SizedBox(
-                                  height: height * 0.03,
-                                ),
-                                Stack(
-                                  children: const [
-                                    FoodRecommendation(),
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: height * 0.03,
-                                ),
-                                const Recommendation(),
-                                SizedBox(
-                                  height: height * 0.03,
-                                ),
-                                const TabBarDashboard(),
-                              ],
+                      Container(
+                        width: width,
+                        height: height * 1.8,
+                        decoration: const BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(30),
+                                topRight: Radius.circular(30))),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: height * 0.09,
+                                  left: width * 0.06,
+                                  right: width * 0.06),
+                              child: const Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Aktivitas Hari Ini",
+                                    style: TextStyle(
+                                        fontFamily: "Montserrat",
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                  )
+                                ],
+                              ),
                             ),
-                          ),
-                          const Info(),
-                          Padding(
-                            padding: EdgeInsets.only(
-                                top: height * 0.14,
-                                left: width * 0.09,
-                                right: width * 0.03),
-                            child: Container(
-                                alignment: Alignment.centerRight,
-                                width: width * 0.89,
-                                height: height * 0.24,
-                                color: Colors.transparent,
-                                child: Image.asset(
-                                  "gambar/sepeda.png",
-                                  fit: BoxFit.contain,
-                                )),
-                          ),
-                        ],
+                            SizedBox(
+                              height: height * 0.03,
+                            ),
+                            const Activity(),
+                            SizedBox(
+                              height: height * 0.03,
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: height * 0.01,
+                                  left: width * 0.06,
+                                  right: width * 0.06),
+                              child: Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Rekomendasi Makanan",
+                                    style: TextStyle(
+                                        fontFamily: "Montserrat",
+                                        fontSize: 13,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              height: height * 0.03,
+                            ),
+                            const FoodRecommendation(),
+                            SizedBox(
+                              height: height * 0.03,
+                            ),
+                            const Recommendation(),
+                            SizedBox(
+                              height: height * 0.03,
+                            ),
+                            const TabBarDashboard(),
+                          ],
+                        ),
+                      ),
+                      const Info(),
+                      Padding(
+                        padding: EdgeInsets.only(
+                            top: height * 0.14,
+                            left: width * 0.09,
+                            right: width * 0.03),
+                        child: Container(
+                            alignment: Alignment.centerRight,
+                            width: width * 0.89,
+                            height: height * 0.24,
+                            color: Colors.transparent,
+                            child: Image.asset(
+                              "gambar/sepeda.png",
+                              fit: BoxFit.contain,
+                            )),
                       ),
                     ],
                   ),

@@ -78,7 +78,7 @@ class StoreScreen extends StatelessWidget {
                       height: bodyHeight * 0.1,
                     ),
                     Stack(
-                      clipBehavior: Clip.hardEdge,
+                      clipBehavior: Clip.none,
                       children: [
                         Container(
                           width: bodyWidth,

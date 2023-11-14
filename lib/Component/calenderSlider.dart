@@ -26,7 +26,7 @@ class _CalenderSliderState extends State<CalenderSlider> {
           width: width * 0.9,
           child: DatePicker(
             DateTime.now(),
-            locale: "Indonesia",
+            locale: "en_US",
             width: width * 0.15,
             height: height * 0.08,
             controller: controllerDate,

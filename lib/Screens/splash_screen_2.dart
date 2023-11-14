@@ -67,7 +67,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                       textAlign: TextAlign.center,
                       style: GoogleFonts.montserrat(
                           fontSize: 23,
-                          color: const Color.fromARGB(255, 35, 35, 35),
+                          color: Color.fromARGB(255, 18, 1, 1),
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -87,7 +87,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                     ),
                   ),
                   SizedBox(
-                    height: bodyHeight * 0.35,
+                    height: bodyHeight * 0.25,
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(
@@ -110,7 +110,7 @@ class _SplashScreen2State extends State<SplashScreen2> {
                               curve: Curves.bounceOut),
                         ),
                         SizedBox(
-                          width: bodyWidth * 0.66,
+                          width: bodyWidth * 0.65,
                         ),
                         Padding(
                             padding: EdgeInsets.only(

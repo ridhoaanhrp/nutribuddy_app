@@ -30,48 +30,45 @@ class _SplashScreenState extends State<SplashScreen> {
         MediaQuery.of(context).padding.bottom;
     final bodyWidth = MediaQuery.of(context).size.width;
 
-    return Container(
-      color: Colors.white,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        children: [
-          Image.asset(
-            image,
-            width: bodyWidth,
-            height: bodyHeight * 0.7,
-            fit: BoxFit.contain,
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        Image.asset(
+          image,
+          width: bodyWidth,
+          height: bodyHeight * 0.7,
+          fit: BoxFit.cover,
+        ),
+        SizedBox(
+          height: bodyHeight * 0.01,
+        ),
+        Container(
+          width: bodyWidth,
+          height: bodyHeight * 0.1,
+          padding: EdgeInsets.symmetric(horizontal: bodyWidth * 0.025),
+          child: AutoSizeText(
+            title,
+            presetFontSizes: const [23, 16, 13, 10],
+            maxLines: 2,
+            style: const TextStyle(
+                fontWeight: FontWeight.bold, fontFamily: "Montserrat"),
           ),
-          SizedBox(
-            height: bodyHeight * 0.01,
+        ),
+        SizedBox(
+          height: bodyHeight * 0.01,
+        ),
+        Container(
+          width: bodyWidth,
+          height: bodyHeight * 0.25,
+          padding: EdgeInsets.symmetric(horizontal: bodyWidth * 0.025),
+          child: AutoSizeText(
+            desc,
+            presetFontSizes: const [13, 11, 10, 9],
+            maxLines: 4,
+            style: const TextStyle(fontFamily: "Montserrat", height: 2),
           ),
-          Container(
-            width: bodyWidth,
-            height: bodyHeight * 0.1,
-            padding: EdgeInsets.symmetric(horizontal: bodyWidth * 0.025),
-            child: AutoSizeText(
-              title,
-              presetFontSizes: const [23, 16, 13, 10],
-              maxLines: 2,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold, fontFamily: "Montserrat"),
-            ),
-          ),
-          SizedBox(
-            height: bodyHeight * 0.01,
-          ),
-          Container(
-            width: bodyWidth,
-            height: bodyHeight * 0.25,
-            padding: EdgeInsets.symmetric(horizontal: bodyWidth * 0.025),
-            child: AutoSizeText(
-              desc,
-              presetFontSizes: const [13, 11, 10, 9],
-              maxLines: 4,
-              style: const TextStyle(fontFamily: "Montserrat", height: 2),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
@@ -91,7 +88,7 @@ class _SplashScreenState extends State<SplashScreen> {
             image,
             width: bodyWidth,
             height: bodyHeight * 0.687,
-            fit: BoxFit.contain,
+            fit: BoxFit.cover,
           ),
           SizedBox(
             height: bodyHeight * 0.02,
@@ -143,7 +140,7 @@ class _SplashScreenState extends State<SplashScreen> {
             image,
             width: bodyWidth,
             height: bodyHeight * 0.697,
-            fit: BoxFit.contain,
+            fit: BoxFit.cover,
           ),
           SizedBox(
             height: bodyHeight * 0.01,
