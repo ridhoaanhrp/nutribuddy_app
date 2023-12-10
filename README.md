@@ -14,5 +14,9 @@ The Nutrbuddy app is a mobile app designed to assist individuals in meeting thei
 This project, executed by a team of 5 students and guided by 4 faculty members, has achieved the acquisition of Intellectual Property Rights as granted by the Directorate of Intellectual Property. I was responsible for implementing UI design and consuming APIs for the Nutribuddy application.
 
 
-Uploading Android Emulator - Pixel_5_API_30_5554 2023-11-14 09-53-01.mp4…
+
+
+https://github.com/ridhoaanhrp/nutribuddy_app/assets/55271500/cdb8e99b-6fb4-44b3-a62e-2c9ea9ce797f
+
+
 
