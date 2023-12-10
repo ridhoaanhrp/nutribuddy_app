@@ -1,16 +1,18 @@
-# nutribuddy_app
+# Nutribuddy Application
 
-A new Flutter project.
+Hello there :wave:, I'm Ridho!
 
-## Getting Started
+Telkom University Fresh Graduate students who have an interest in learning to become a Flutter Developer
 
-This project is a starting point for a Flutter application.
+# Implementation UI Design
 
-A few resources to get you started if this is your first Flutter project:
+Nutribuddy Application project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Description
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The Nutrbuddy app is a mobile app designed to assist individuals in meeting their micronutrient needs.
+This project, executed by a team of 5 students and guided by 4 faculty members, has achieved the acquisition of Intellectual Property Rights as granted by the Directorate of Intellectual Property. I was responsible for implementing UI design and consuming APIs for the Nutribuddy application.
+
+
+Uploading Android Emulator - Pixel_5_API_30_5554 2023-11-14 09-53-01.mp4…
+
